@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { adminAllTransactions, adminTransactions } from "~/api/admin";
 import { convertDate, sortDate, convertPrice } from "~/utils/convert";
 import Loading from "~/components/common/Loading";
-import styles from "~/styles/admin/AdminOrder.module.scss";
+import styles from "~/styles/Admin/AdminOrder.module.scss";
 import { TransactionDetail } from "~/types";
 
 const AdminOrder = () => {
