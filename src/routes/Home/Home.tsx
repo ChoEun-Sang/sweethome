@@ -1,4 +1,4 @@
-import { Slider } from "~/utils/slider.tsx";
+import { Slider } from "~/routes/Home/Slider";
 import styles from "~/styles/Home/Home.module.scss";
 
 const Home = () => {
