@@ -1,16 +1,22 @@
+import { lazy, Suspense, type ReactElement } from "react";
 import { createBrowserRouter } from "react-router-dom";
+import Loading from "~/components/common/Loading";
 import App from "~/App";
 import Home from "~/routes/Home/Home";
-import About from "~/routes/About/About";
-import Shop from "~/routes/Shop/Shop";
-import ShopDetail from "~/routes/Shop/ShopDetail";
-import MyPage from "~/routes/MyPage/MyPage";
-import Cart from "~/routes/Cart/Cart";
-import Login from "~/routes/Login/Login";
-import SignUp from "~/routes/SignUp/SignUp";
-import Admin from "~/routes/Admin/Admin";
-import Buy from "~/routes/Buy/Buy";
-import NotFound from "~/routes/NotFound/NotFound";
+const About = lazy(() => import("~/routes/About/About"));
+const Shop = lazy(() => import("~/routes/Shop/Shop"));
+const ShopDetail = lazy(() => import("~/routes/Shop/ShopDetail"));
+const MyPage = lazy(() => import("~/routes/MyPage/MyPage"));
+const Cart = lazy(() => import("~/routes/Cart/Cart"));
+const Login = lazy(() => import("~/routes/Login/Login"));
+const SignUp = lazy(() => import("~/routes/SignUp/SignUp"));
+const Admin = lazy(() => import("~/routes/Admin/Admin"));
+const Buy = lazy(() => import("~/routes/Buy/Buy"));
+const NotFound = lazy(() => import("~/routes/NotFound/NotFound"));
+
+const SuspenseWrapper = ({ element }: { element: ReactElement }) => (
+  <Suspense fallback={<Loading />}>{element}</Suspense>
+);
 
 export default createBrowserRouter([
   {
@@ -23,44 +29,44 @@ export default createBrowserRouter([
       },
       {
         path: "/sweethome/about",
-        element: <About />
+        element: <SuspenseWrapper element={<About />} />
       },
       {
         path: "/sweethome/shop",
-        element: <Shop />
+        element: <SuspenseWrapper element={<Shop />} />
       },
       {
         path: "/sweethome/shop/:id",
-        element: <ShopDetail />
+        element: <SuspenseWrapper element={<ShopDetail />} />
       },
       {
         path: "/sweethome/mypage",
-        element: <MyPage />
+        element: <SuspenseWrapper element={<MyPage />} />
       },
       {
         path: "/sweethome/cart",
-        element: <Cart />
+        element: <SuspenseWrapper element={<Cart />} />
       },
       {
         path: "/sweethome/login",
-        element: <Login />
+        element: <SuspenseWrapper element={<Login />} />
       },
       {
         path: "/sweethome/signup",
-        element: <SignUp />
+        element: <SuspenseWrapper element={<SignUp />} />
       },
       {
         path: "/sweethome/admin",
-        element: <Admin />
+        element: <SuspenseWrapper element={<Admin />} />
       },
       {
         path: "/sweethome/buy",
-        element: <Buy />
+        element: <SuspenseWrapper element={<Buy />} />
       }
     ]
   },
   {
     path: "/sweethome/*",
-    element: <NotFound />
+    element: <SuspenseWrapper element={<NotFound />} />
   }
 ]);
