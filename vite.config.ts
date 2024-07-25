@@ -15,7 +15,14 @@ export default defineConfig({
           gzipSize: true,
           brotliSize: true
         }) as PluginOption
-      ]
+      ],
+      output: {
+        manualChunks: {
+          react: ["react", "react-dom"],
+          reactRouter: ["react-router-dom"],
+          swiperBundle: ["swiper"]
+        }
+      }
     }
   },
   base: "/sweethome",
