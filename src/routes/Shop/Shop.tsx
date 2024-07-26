@@ -55,7 +55,7 @@ const Shop = () => {
             <li>
               {categorys.map((category, index) => (
                 <input
-                  key={index}
+                  key={`${category}-${index}`}
                   type="button"
                   defaultValue={category}
                   onClick={categoryHandler}
@@ -68,7 +68,10 @@ const Shop = () => {
         <div className={styles.productListWrap}>
           <ul className={styles.productList}>
             {allProducts.map((product: GetProduct) => (
-              <ProductItem product={product} />
+              <ProductItem
+                key={product.id}
+                product={product}
+              />
             ))}
           </ul>
         </div>
