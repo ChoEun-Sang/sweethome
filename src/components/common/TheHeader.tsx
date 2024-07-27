@@ -23,7 +23,7 @@ const TheHeader = () => {
     try {
       await logOut();
       alert("로그아웃 완료되었습니다.");
-      navigate("/sweethome");
+      navigate("/");
     } catch (error: any) {
       alert(error.message);
     }
@@ -35,13 +35,13 @@ const TheHeader = () => {
     <header>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <NavLink to="/sweethome">SWEET HOME</NavLink>
+          <NavLink to="/">SWEET HOME</NavLink>
         </div>
         <div className={styles.navbar}>
           <ul>
             <li className={styles.menu}>
               <NavLink
-                to="/sweethome/about"
+                to="/about"
                 className={({ isActive }) =>
                   isActive ? styles.active : "menu"
                 }>
@@ -50,7 +50,7 @@ const TheHeader = () => {
             </li>
             <li className={styles.menu}>
               <NavLink
-                to="/sweethome/shop"
+                to="/shop"
                 className={({ isActive }) => (isActive ? styles.active : "")}>
                 SHOP
               </NavLink>
@@ -68,19 +68,19 @@ const TheHeader = () => {
             ) : (
               <div>
                 <span className={styles.userLogin}>
-                  <NavLink to="/sweethome/login">Login</NavLink>
+                  <NavLink to="/login">Login</NavLink>
                 </span>
                 <span className={styles.userSignUp}>
-                  <NavLink to="/sweethome/signup">Sign-Up</NavLink>
+                  <NavLink to="/signup">Sign-Up</NavLink>
                 </span>
               </div>
             )}
           </div>
           <div className={styles.icons}>
-            <NavLink to="/sweethome/mypage">
+            <NavLink to="/mypage">
               <FaUserAlt className={styles.mypage} />
             </NavLink>
-            <NavLink to="/sweethome/cart">
+            <NavLink to="/cart">
               <FaShoppingBag className={styles.shoppingbag} />
             </NavLink>
             <div className={styles.search}>

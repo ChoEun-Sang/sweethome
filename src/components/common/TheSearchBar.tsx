@@ -33,14 +33,14 @@ const TheSearchBar = ({ search, onChange }: any) => {
           .toLocaleLowerCase()
           .includes(search?.toLocaleLowerCase().replace(" ", ""))
       ) {
-        window.location.href = `/sweethome/shop/${product.id}`;
+        window.location.href = `/shop/${product.id}`;
       } else {
         return;
       }
     });
   };
   const handleRedirection = (id: string) => {
-    location.href = `/sweethome/shop/${id}`;
+    location.href = `/shop/${id}`;
   };
   return (
     <>

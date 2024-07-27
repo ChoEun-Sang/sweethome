@@ -1,9 +1,12 @@
 import { defineConfig, type PluginOption } from "vite";
+import { visualizer } from "rollup-plugin-visualizer";
 import react from "@vitejs/plugin-react";
 import path from "path";
-import { visualizer } from "rollup-plugin-visualizer";
+import viteImagemin from "@vheemstra/vite-plugin-imagemin";
+import imageminMozjpeg from "imagemin-mozjpeg";
+import imageminPngQuant from "imagemin-pngquant";
+import imageminWebp from "imagemin-webp";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
   build: {
@@ -14,7 +17,19 @@ export default defineConfig({
           open: true,
           gzipSize: true,
           brotliSize: true
-        }) as PluginOption
+        }) as PluginOption,
+        viteImagemin({
+          plugins: {
+            jpg: imageminMozjpeg(),
+            png: imageminPngQuant()
+          },
+          makeWebp: {
+            plugins: {
+              jpg: imageminWebp(),
+              png: imageminWebp()
+            }
+          }
+        })
       ],
       output: {
         manualChunks: {
@@ -25,7 +40,7 @@ export default defineConfig({
       }
     }
   },
-  base: "/sweethome",
+  base: "/",
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "./src")

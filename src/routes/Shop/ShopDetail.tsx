@@ -101,16 +101,16 @@ const ShopDetail = () => {
     }
 
     if (confirm("장바구니를 확인하시겠습니까?")) {
-      navigate("/sweethome/cart");
+      navigate("/cart");
     } else return;
   };
 
   const buyNowHandler = () => {
     if (!localStorage.getItem("token")) {
       alert("로그인이 필요합니다.");
-      navigate("/sweethome/login");
+      navigate("/login");
     } else {
-      navigate("/sweethome/buy", { state: [product] });
+      navigate("/buy", { state: [product] });
     }
   };
 

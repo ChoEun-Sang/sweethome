@@ -20,53 +20,53 @@ const SuspenseWrapper = ({ element }: { element: ReactElement }) => (
 
 export default createBrowserRouter([
   {
-    path: "/sweethome",
+    path: "/",
     element: <App />,
     children: [
       {
-        path: "/sweethome",
+        path: "/",
         element: <Home />
       },
       {
-        path: "/sweethome/about",
+        path: "/about",
         element: <SuspenseWrapper element={<About />} />
       },
       {
-        path: "/sweethome/shop",
+        path: "/shop",
         element: <SuspenseWrapper element={<Shop />} />
       },
       {
-        path: "/sweethome/shop/:id",
+        path: "/shop/:id",
         element: <SuspenseWrapper element={<ShopDetail />} />
       },
       {
-        path: "/sweethome/mypage",
+        path: "/mypage",
         element: <SuspenseWrapper element={<MyPage />} />
       },
       {
-        path: "/sweethome/cart",
+        path: "/cart",
         element: <SuspenseWrapper element={<Cart />} />
       },
       {
-        path: "/sweethome/login",
+        path: "/login",
         element: <SuspenseWrapper element={<Login />} />
       },
       {
-        path: "/sweethome/signup",
+        path: "/signup",
         element: <SuspenseWrapper element={<SignUp />} />
       },
       {
-        path: "/sweethome/admin",
+        path: "/admin",
         element: <SuspenseWrapper element={<Admin />} />
       },
       {
-        path: "/sweethome/buy",
+        path: "/buy",
         element: <SuspenseWrapper element={<Buy />} />
       }
     ]
   },
   {
-    path: "/sweethome/*",
+    path: "/*",
     element: <SuspenseWrapper element={<NotFound />} />
   }
 ]);

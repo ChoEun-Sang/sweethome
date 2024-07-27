@@ -22,11 +22,11 @@ const Login = () => {
       const res = await logIn(body);
       if (res) {
         if (res.user.email === import.meta.env.VITE_ADMIN_ACCOUNT) {
-          navigate("/sweethome/admin");
+          navigate("/admin");
           dispatch({ type: "RETURN", account: res });
           dispatch({ type: "LOGOUT", state: true });
         } else {
-          navigate("/sweethome");
+          navigate("/");
           dispatch({ type: "RETURN", account: res });
           dispatch({ type: "LOGOUT", state: true });
         }
@@ -78,7 +78,7 @@ const Login = () => {
           <div className={styles.signup}>
             <p>아직 회원이 아니신가요?</p>
             <p>회원 가입을 하시면 다양하고 특별한 혜택을 누리세요</p>
-            <Link to="/sweethome/signup">
+            <Link to="/signup">
               <button
                 type="button"
                 className={styles.btn__signup}>
