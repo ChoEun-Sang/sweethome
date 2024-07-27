@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { priceBeforeDiscount, convertPrice } from "~/utils/convert";
-import styles from "~/styles/Shop/ProductItem.module.scss";
 import { GetProduct } from "~/types";
+import styles from "~/styles/Shop/ProductItem.module.scss";
 import useLazyImageObserver from "~/hook/useLazyImageObserver";
+import altImage from "/public/assets/products/altImage.jpg";
 
 const ProductItem = ({ product }: { product: GetProduct }) => {
   const { imageRef, imageSrc } = useLazyImageObserver(product.thumbnail || "");
@@ -13,7 +14,7 @@ const ProductItem = ({ product }: { product: GetProduct }) => {
         <div className={styles.productPhotoBox}>
           <img
             ref={imageRef}
-            src={imageSrc}
+            src={imageSrc || altImage}
           />
         </div>
         <div className={styles.productInfo}>
