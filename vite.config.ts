@@ -40,7 +40,7 @@ export default defineConfig({
       }
     }
   },
-  base: "/sweethome",
+  base: "/",
   resolve: {
     alias: {
       "~": path.resolve(__dirname, "./src")
