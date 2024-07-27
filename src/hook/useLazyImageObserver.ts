@@ -15,7 +15,7 @@ function useLazyImageObserver(src: string) {
             }
           }
         },
-        { threshold: [0.25] }
+        { threshold: [0.1] }
       );
       if (imageRef.current) {
         observer.observe(imageRef.current);
