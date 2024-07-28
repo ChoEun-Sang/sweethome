@@ -20,8 +20,8 @@ export default defineConfig({
         }) as PluginOption,
         viteImagemin({
           plugins: {
-            jpg: imageminMozjpeg(),
-            png: imageminPngQuant()
+            jpg: imageminMozjpeg({ quality: 50 }),
+            png: imageminPngQuant({ quality: [0.6, 0.8] })
           },
           makeWebp: {
             plugins: {
