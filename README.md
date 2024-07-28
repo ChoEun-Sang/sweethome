@@ -14,15 +14,6 @@
 
 <br />
 
-## 개발자 소개
-
-| **[김준희](https://github.com/dev-junehee)** | **[송홍빈](https://github.com/hbsongk)** | **[조은상](https://github.com/ChoEun-Sang)** | **[박근우](https://github.com/SpeedGear)** | **[백동은](https://github.com/debeck6)** |
-| :--------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------: |
-|<a href="https://github.com/dev-junehee"><img src="https://avatars.githubusercontent.com/u/116873887?v=4" width=150px alt="김준희" /> | <a href="https://github.com/hbsongk"><img src="https://avatars.githubusercontent.com/u/68498323?v=4" width=150px alt="송홍빈" /> | <a href="https://github.com/ChoEun-Sang"><img src="https://avatars.githubusercontent.com/u/128155681?v=4" width=150px alt="조은상" /> | <a href="https://github.com/SpeedGear"><img src="https://avatars.githubusercontent.com/u/128351787?v=4" width=150px alt="박근우" /> | <a href="https://github.com/debeck6"><img src="https://avatars.githubusercontent.com/u/128360222?v=4" width=150px alt="백동은" /> |
-|회원가입<br>About 페이지<br>상품 페이지<br>장바구니 페이지<br>결제 페이지<br>관리자 페이지<br>Footer|로그인/로그아웃<br>검색 기능<br>메인 페이지<br>상품 페이지<br>장바구니 페이지<br>결제 페이지<br>Header|회원가입<br>로그인 인증<br>마이페이지<br>상품 페이지<br>장바구니 페이지<br>결제 페이지<br>관리자 페이지|디자인 참여|디자인 참여|
-
-<br />
-
 ## 사용기술 및 개발환경
 
 ### Development
@@ -46,24 +37,7 @@
 
 ### Deployment
 
-<img src="https://img.shields.io/badge/GitHub Pages-181717?style=flat&logo=GitHub Pages&logoColor=white"/></a>
-
-### Environment
-
-<p>
-<img src="https://img.shields.io/badge/Visual Studio Code-007ACC?style=flat&logo=Visual Studio Code&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white"/></a>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat&logo=GitHub&logoColor=white"/></a>
-</p>
-
-### Cowork Tools
-<p>
-<img src="https://img.shields.io/badge/Slack-4A154B?style=flat&logo=Slack&logoColor=white" />
-<img src="https://img.shields.io/badge/Notion-000000?style=flat&logo=Notion&logoColor=white" />
-<img src="https://img.shields.io/badge/Google Sheets-34A853?style=flat&logo=Google Sheets&logoColor=white" />
-<img src="https://img.shields.io/badge/Google Meet-00897B?style=flat&logo=Google Meet&logoColor=white" />
-<img src="https://img.shields.io/badge/Zoom-2D8CFF?style=flat&logo=Zoom&logoColor=white" />
-</p>
+<img src="https://img.shields.io/badge/netlify-00C7B7?style=flat&logo=netlify Pages&logoColor=white"/></a>
 
 <br />
 
