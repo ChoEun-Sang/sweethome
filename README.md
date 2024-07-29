@@ -148,7 +148,7 @@
 ### clone project
 
 ```bash
-$ git clone git@github.com:FE5-TEAM9/sweethome.git
+$ git clone git@github.com:ChoEun-Sang/sweethome.git
 ```
 
 ### go to project
