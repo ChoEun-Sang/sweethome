@@ -67,7 +67,7 @@
 
 ### 메인 페이지 (Home)
 - 이미지 슬라이더 : React-slider를 활용한 메인 페이지 이미지 슬라이더 구현
-- 
+  
 | **메인 페이지** | **About 페이지** |
 | :--------------------------------------------: | :--------------------------------------------: | 
 | <img src="public/assets/README/01_main.png" width=360px alt="메인" /> | <img src="public/assets/README/02_about.png" width=360px alt="어바웃" /> |
