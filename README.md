@@ -54,6 +54,12 @@
 
 <br />
 
+| **최적화 전** | **최적화 후** |
+| :--------------------------------------------: | :--------------------------------------------: |
+| <img src="https://github.com/user-attachments/assets/a25aae6e-e7bb-42af-ae02-d636a2083543" width=360px alt="최적화 전 성능" />| <img src="https://github.com/user-attachments/assets/3245c22d-8e1c-4309-a270-77e788eee6f9" width=360px alt="최적화 후 성능" /> 
+
+<br />
+
 ## 전체 화면 구성
 
 ### Layout
