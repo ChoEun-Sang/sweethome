@@ -44,11 +44,11 @@
 ## 성능 개선 
 ### 🔗 [Lighthouse Performance 성능 79% 개선](https://velog.io/@good_sang/Sweet-Home-Lighthouse-Performance-개선하기-1)<br />
 
-**1. 번들 크기 최적화를 통해 FCP(First Contentful Paint) 개선** 
+**1. 번들 크기 최적화를 통해 First Contentful Paint(FCP) 개선** 
 - vite.config.json의 manualChunks를 설정해 라이브러리 청크 분리
 - Page 단위로 lazy와 suspense 적용하여 필요한 리소스만 로드
 
-**2. 이미지 최적화를 통해 LCP(Largest Contentful Paint) 개선** 
+**2. 이미지 최적화를 통해 Largest Contentful Paint(LCP) 개선** 
 - Intersection Observer API를 활용해 뷰포트에 보이는 이미지만 로드
 - imagemin 플러그인을 사용해 전체 이미지 용량 65.51% 감소
 
