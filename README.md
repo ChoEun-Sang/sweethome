@@ -44,7 +44,7 @@
 ## 성능 개선 
 ### 🔗 [AWS S3, CloudFront, Route 53으로 웹 호스팅 구축](https://velog.io/@good_sang/AWS-S3-CloudFront-Route-53-를-이용해서-배포)<br />
 
-| **AWS 아키텍처** | **Cache Hit** | **Lighthouse 개선** |
+| **AWS 아키텍처** | **Cache Hit** | **Lighthouse 개선** |
 | :--------------------------------------------: | :--------------------------------------------: | :--------------------------------------------: |
 | <img src="https://github.com/user-attachments/assets/919ad6b6-7f85-47d4-a25c-5b6928100965" width=360px alt="AWS 아키텍처" />| <img src="https://github.com/user-attachments/assets/2142d39a-038f-4788-8bfb-493514ecb8b6" width=360px alt="Cache Hit" /> | <img src="https://github.com/user-attachments/assets/8e89f35a-4f18-425d-9b79-351c6e6d5efd" width=360px alt="Lighthouse 개선" /> 
 
