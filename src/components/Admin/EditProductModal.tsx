@@ -2,7 +2,7 @@ import { useState } from "react";
 import { TfiClose } from "react-icons/tfi";
 import { editProduct } from "~/api/products";
 import { EditProductModalProps } from "~/types";
-import { SELECT_TAGS } from "~/constants";
+import { SELECT_TAGS } from "~/utils/constants";
 import Loading from "~/components/common/Loading";
 import Select from "~/components/common/Select";
 import styles from "~/styles/Admin/EditProductModal.module.scss";
