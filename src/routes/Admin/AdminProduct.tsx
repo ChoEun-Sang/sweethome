@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { TiDeleteOutline } from "react-icons/ti";
 import { BsPencilSquare } from "react-icons/bs";
 import { addProduct, getAllProducts, deleteProduct } from "~/api/products";
-import { SELECT_TAGS } from "~/constants";
+import { SELECT_TAGS } from "~/utils/constants";
 import { convertPrice } from "~/utils/convert";
 import EditProductModal from "~/components/Admin/EditProductModal";
 import Select from "~/components/common/Select";
